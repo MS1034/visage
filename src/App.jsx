@@ -6,7 +6,6 @@ import Services from "./components/Services";
 import { useRef, useState } from "react";
 import logo from "./logo-3.png";
 import { useMediaQuery } from "react-responsive";
-import Footer from "./components/Footer";
 
 function App() {
   const homeRef = useRef(null);
