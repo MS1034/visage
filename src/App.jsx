@@ -6,7 +6,7 @@ import Services from "./components/Services";
 import { useRef, useState } from "react";
 import logo from "./logo-3.png";
 import { useMediaQuery } from "react-responsive";
-
+// import "./main.scss";
 function App() {
   const homeRef = useRef(null);
   const servicesRef = useRef(null);
@@ -33,7 +33,7 @@ function App() {
       <header>
         <div className="header-container">
           <a className="container" href="#home">
-            <img className="logo" src={logo} alt="logo" />
+            <img className="logo" src={logo} alt="logo" width="50px" />
             <span className="logo-name">isage</span>
           </a>
           <nav
@@ -88,6 +88,8 @@ function App() {
             <button className="primary-button"> Log In </button>
 
             <button className="burger" hidden={!isMobile} onClick={toggleMenu}>
+              <span className="sr-only">Menu Hamburger</span>
+
               {isMenuOpen ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

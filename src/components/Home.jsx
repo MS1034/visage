@@ -1,6 +1,6 @@
 import React from "react";
 import concept from "../concept.mp4";
-import face from "../face.jpg";
+import face from "../face.webp";
 
 function Home() {
   return (
@@ -38,12 +38,13 @@ function Home() {
             fill="#00447f"
           >
             <path d="M19.749,9.464,5,.048V23.989L19.743,14.54a3,3,0,0,0,.006-5.076Z" />
+            <span className="sr-only">Watch Demo</span>
           </svg>
         </button>
         <p className="demo-text">Watch Demo</p>
       </div>
       <div class="image-container">
-        <img src={face} alt="mockup" width={350} />
+        <img src={face} alt="Face Recognition Img" width="350px" />
       </div>
     </div>
   );
