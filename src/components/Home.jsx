@@ -3,6 +3,9 @@ import concept from "../concept.mp4";
 import face from "../face.webp";
 
 function Home() {
+  const handleOpenYouTube = () => {
+    window.open("https://youtu.be/jaE-IIWLNKY", "_blank");
+  };
   return (
     <div class="grid-container">
       <div class="content">
@@ -29,7 +32,7 @@ function Home() {
             ></path>
           </svg>
         </a>
-        <button class="play-button ">
+        <button class="play-button" onClick={handleOpenYouTube}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             id="Layer_1"
